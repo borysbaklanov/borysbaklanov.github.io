@@ -42,8 +42,7 @@ li {
 
 .content {
     width: 600px;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
+    grid-row-gap: 64px;
     flex-direction: column;
     margin-top: 8%;
     margin-left: auto;
