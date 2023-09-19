@@ -40,6 +40,11 @@ li {
     padding-bottom: 10px;
 }
 
+br {
+   display: block;
+   margin: 10px 0;
+}
+
 .content {
     width: 600px;
     grid-row-gap: 64px;
