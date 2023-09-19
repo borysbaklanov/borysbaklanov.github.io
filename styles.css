@@ -106,4 +106,8 @@ br {
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    display: flex;
 }
