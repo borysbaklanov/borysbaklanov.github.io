@@ -6,11 +6,12 @@ body {
     min-height: 100%;
     color: #fff;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Graphik, Arial, sans-serif;
     line-height: 20px;
     color: #fff;
     background-color: #5c83d2;
     font-size: 15px;
+    letter-spacing: -0.02rem;
 }
 
 .container {
@@ -26,8 +27,8 @@ body {
 
 .hflex {
     flex-direction: row;
-    align-items: flex-start;
     display: flex;
+    align-items: baseline;
 }
 
 
@@ -40,9 +41,18 @@ li {
     padding-bottom: 10px;
 }
 
-br {
-   display: block;
-   margin: 10px 0;
+
+
+p, ul {
+    margin: 0;
+}
+
+.secondary-text {
+    opacity: 0.5;
+}
+
+.indent {
+    margin-right: 24px;
 }
 
 .content {
@@ -55,13 +65,14 @@ br {
     display: flex;
 }
 
-.heading {
+h1 {
     color: #fff;
     overflow-wrap: normal;
     margin-top: 0;
     font-size: 25px;
     font-weight: 400;
     line-height: 33px;
+    letter-spacing: -0.05rem;
 }
 
 .list {
@@ -82,9 +93,25 @@ br {
     flex-direction: column;
     align-items: flex-start;
     display: flex;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-row-gap: 24px;
     margin-bottom: 80px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.ty {
+    align-self: flex-end;
+}
+
+.nomargin {
+    margin: 0;
 }
 
 .navbar {
@@ -106,15 +133,59 @@ br {
 
 .nav-link {
     color: white;
-    text-decoration: none
+    text-decoration: none;
+    margin-left: 24px;
+}
+
+.nav-link-selected {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.selected {
+    display: flex;
+    flex-direction: row;
+    grid-row-gap: 8px;
+    grid-column-gap: 8px;
+    align-items: center;
+}
+
+.svg-container {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+#rotating-svg {
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+    transform: rotate(0deg);
+  }
+    100% {
+    transform: rotate(360deg);
+  }
 }
 
 .ampelmann {
     grid-column-gap: 40px;
-    grid-row-gap: 40px;
     align-items: center;
-    justify-content: space-between;
     flex-direction: row;
-    align-items: flex-start;
     display: flex;
+}
+
+.flex-item {
+    flex-shrink: 1;
+}
+
+.flex-item:last-child {
+    flex-shrink: 0;
+    width: 85px;
 }

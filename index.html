@@ -15,24 +15,28 @@
         type="image/x-icon"
     />
     <link
-        href="https://uploads-ssl.webflow.com/img/webclip.png"
+        href="/favicon.png"
         rel="apple-touch-icon"
     />
 
-<!-- fonts go here -->
+<!-- fonts -->
     <style>
-        /* cyrillic-ext */
         @font-face {
-            font-family: "Roboto";
+            font-family: "Graphik";
             font-style: normal;
-            font-weight: 300;
-            font-display: swap;
-            src: url(
-                    https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2
-                )format("woff2");
-            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
-                U+A640-A69F, U+FE2E-FE2F;
+            font-weight: 400;
+            src: "/fonts/Graphik-Regular"
+                format("woff2");
         }
+
+        @font-face {
+            font-family: "Graphik";
+            font-style: normal;
+            font-weight: 700;
+            src: "/fonts/Graphik-Bold"
+                format("woff2");
+        }
+
     </style>
 
 </head>
@@ -41,40 +45,77 @@
 
 <body>
     <div class="vflex navbar">
-        <div>
             <a href="/" class="nav-link">Borys Baklanov</a>
-        </div>
         <div class="links">
-            <a href="/" class="nav-link">Home</a
-            ><a href="/about" class="nav-link">About</a
+            <div class="selected">
+                <div class="svg-container">
+                    <svg width="16" height="16" id="rotating-svg" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.43642 0.835449C5.05519 0.912231 5.66913 1.1116 6.24307 1.44296C8.53888 2.76845 9.32548 5.70408 8 7.99989C6.67451 5.70408 3.73888 4.91748 1.44307 6.24296C0.869959 6.57385 0.390894 7.00508 0.0152588 7.50165C0.195011 4.57633 1.94684 2.07616 4.43642 0.835449Z" fill="url(#paint0_linear_242_84)"/>
+                        <path d="M0.0152623 7.50169C0.390897 7.00512 0.869962 6.57389 1.44308 6.243C3.73888 4.91752 6.67452 5.70412 8 7.99992C5.34903 7.99992 3.2 10.149 3.2 12.7999C3.2 13.4621 3.33408 14.0929 3.57657 14.6668C1.42081 13.2336 0 10.7827 0 7.99992C0 7.8326 0.00513712 7.66647 0.0152623 7.50169Z" fill="url(#paint1_linear_242_84)"/>
+                        <path d="M3.57652 14.6669C3.33403 14.093 3.19995 13.4622 3.19995 12.8C3.19995 10.149 5.34898 8 7.99995 8C6.67447 10.2958 7.46107 13.2314 9.75687 14.5569C10.3308 14.8883 10.9448 15.0877 11.5635 15.1644C10.4905 15.6992 9.28033 16 7.99995 16C6.36443 16 4.84354 15.5092 3.57652 14.6669Z" fill="url(#paint2_linear_242_84)"/>
+                        <path d="M11.5637 15.1644C10.9449 15.0877 10.3309 14.8883 9.757 14.5569C7.4612 13.2314 6.6746 10.2958 8.00008 8C9.32556 10.2958 12.2612 11.0824 14.557 9.75692C15.1301 9.42603 15.6092 8.9948 15.9848 8.49823C15.8051 11.4236 14.0532 13.9237 11.5637 15.1644Z" fill="url(#paint3_linear_242_84)"/>
+                        <path d="M15.9847 8.49835C15.6091 8.99492 15.13 9.42615 14.5569 9.75704C12.2611 11.0825 9.32548 10.2959 8 8.00011C10.651 8.00011 12.8 5.85108 12.8 3.20011C12.8 2.53796 12.6659 1.90711 12.4234 1.33325C14.5792 2.76645 16 5.21736 16 8.00011C16 8.16744 15.9949 8.33357 15.9847 8.49835Z" fill="url(#paint4_linear_242_84)"/>
+                        <path d="M12.4234 1.33314C12.6659 1.907 12.8 2.53784 12.8 3.2C12.8 5.85097 10.6509 8 7.99997 8C9.32546 5.7042 8.53886 2.76856 6.24305 1.44308C5.66911 1.11171 5.05517 0.912345 4.4364 0.835563C5.50947 0.30079 6.71959 0 7.99997 0C9.6355 0 11.1564 0.490794 12.4234 1.33314Z" fill="url(#paint5_linear_242_84)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_242_84" x1="4.32957" y1="0.835449" x2="4.32957" y2="7.99989" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFD305"/>
+                        <stop offset="1" stop-color="#FDCF01"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_242_84" x1="4" y1="5.59912" x2="4" y2="14.6668" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#52CF30"/>
+                        <stop offset="1" stop-color="#3BBD1C"/>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_242_84" x1="7.38174" y1="8" x2="7.38174" y2="16" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#14ADF6"/>
+                        <stop offset="1" stop-color="#1191F4"/>
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_242_84" x1="11.6705" y1="8" x2="11.6705" y2="15.1644" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#CA70E1"/>
+                        <stop offset="1" stop-color="#B452CB"/>
+                        </linearGradient>
+                        <linearGradient id="paint4_linear_242_84" x1="12" y1="1.33325" x2="12" y2="10.4009" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FF645D"/>
+                        <stop offset="1" stop-color="#FF4332"/>
+                        </linearGradient>
+                        <linearGradient id="paint5_linear_242_84" x1="8.61819" y1="0" x2="8.61819" y2="8" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FBB114"/>
+                        <stop offset="1" stop-color="#FF9508"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+
+                </div>
+            <div><a href="/" class="nav-link-selected">Home</a></div>
+            </div>
+            <a href="/about" class="nav-link">About</a
             ><a href="/showcase" class="nav-link">Showcase</a>
         </div>
     </div>
     <div class="content">
-        <h1 class="heading">
+        <h1>
             I find the greatest joy in creating things together with other
             people. Things that benefit people and solve their needs. Things
             that bring joy to the customers and money to the creators. Good
             things.
         </h1>
         <div class="hflex ampelmann">
-            <p>
+            <p class="flex-item">
                 I’m a software designer, building products that are useful,
                 simple and fun. I love working with enthusiastic people on
                 problems that I could relate to. In my spare time, I enjoy
                 things that bring something new to my work: video &amp; board
                 games, art history, human psychology, photography, and pop
-                culture. I’m also a huge fan of snacks.<br />I live in Berlin,
+                culture. I’m also a huge fan of snacks.<br></br>I live in Berlin,
                 so if you’re ever here — let’s meet for a cup of tea.
             </p>
-            <svg width="85" height="93" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <svg class="flex-item" width="85" height="93" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <path d="M84.0383 31.4036C80.0995 26.3595 73.6306 31.9513 70.698 36.9954L70.353 36.4189C70.353 36.4189 70.2092 36.1883 70.0655 36.1307C69.8355 36.0154 69.6917 36.1018 69.6917 36.1018L56.9264 41.4342L48.0999 31.2307L49.8537 28.8095C51.2338 29.0113 54.1663 28.2619 54.9426 27.3107C56.3226 25.6389 56.2939 20.8542 56.1501 20.2201C56.0639 19.6148 55.7189 18.923 55.1439 18.3754C55.9201 18.0007 56.8401 17.4819 57.1564 16.9054C57.4727 16.3866 57.3002 15.2048 57.1277 14.4554C56.5239 12.7836 53.0163 15.9542 51.0325 9.4113L59.5427 2.86836C59.5427 2.86836 59.9165 2.55131 59.6577 2.06131C59.3702 1.54248 58.6227 1.74425 58.6227 1.74425L47.5249 4.54013L44.9661 0.447191C44.9661 0.447191 44.8511 0.216602 44.5061 0.072485C44.1611 -0.0716325 43.8448 0.0436619 43.8448 0.0436619C37.7497 2.46484 30.792 5.77954 24.3231 9.52659C24.3231 9.52659 24.1218 9.67071 24.0356 9.93012C23.9781 10.1319 23.9493 10.2472 23.9493 10.5066C23.9781 12.1784 24.5531 16.3001 24.5531 16.3001L15.8704 22.0648C15.8704 22.0648 15.3241 22.4972 15.6979 23.1601C16.0141 23.7366 16.5892 23.6213 16.5892 23.6213L28.2619 21.1136L33.3508 29.5013L20.413 58.2095C20.413 58.2095 3.10508 76.08 0.287507 78.9912C0.115003 79.1641 0.0287507 79.4524 0 79.6253C0 79.8271 0.0287507 80.0289 0.143754 80.2306C4.65761 86.37 13.0528 92.1635 21.3043 92.9994C21.3043 92.9994 21.793 93.0282 21.9655 92.6824C22.1668 92.3077 21.9368 91.8753 21.8793 91.8176C20.4993 89.3677 20.528 89.5406 16.7042 82.9688L36.6859 64.7524C43.6436 72.0159 58.0764 85.0153 61.814 88.4453C62.0728 88.7047 62.2453 88.82 62.7628 88.9065C63.2803 88.993 63.7116 88.82 63.9416 88.7335C69.893 85.8512 74.8381 82.133 79.4957 75.3306C79.4957 75.3306 79.7545 74.8694 79.3807 74.4659C79.1507 74.2353 78.9782 74.1777 78.5182 74.1489C75.8156 74.0047 68.8579 75.0712 68.8579 75.0712L52.47 57.2871L54.2238 53.1942C54.9426 53.5401 56.2364 54.1165 57.4727 54.6354C57.9327 54.8371 59.0827 55.3271 59.629 55.3271C60.1465 55.3271 61.3253 54.6065 61.7565 54.3471C66.5579 51.6089 71.5318 48.5248 76.4769 45.3542C76.5344 45.3254 76.6206 45.2389 76.6494 45.1236C76.7069 44.9507 76.6206 44.7777 76.6206 44.7777L76.0169 43.4807C80.6745 42.2124 87.5459 35.8713 84.0383 31.4036Z"/>
             </svg>
 
         </div>
         <div class="vflex">
-            <h1 class="heading">What you can expect working with me</h1>
-            <ul role="list" class="list">
+            <h1>What you can expect working with me</h1>
+            <ul class="list">
                 <li>
                     I am a generalist, designing from an idea to a released
                     product &amp; beyond
@@ -95,20 +136,24 @@
                 </li>
             </ul>
         </div>
-        <h1 class="heading">
+        <h1>
             Reach me out by <span style="text-decoration: underline dotted;">borys.baklanov@gmail.com</span><br />I’m always happy to
             chat.
         </h1>
         <div class="vflex footer">
             <div class="divider"></div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-                tristique posuere.
-            </p>
-        </div>
-    </div>
+            <div class="footer-content">
+                <div class="hflex">
+                    <div>
+                        <p class="secondary-text indent">background-color:<br />font-family:<br />last updated:
+                        </p>
+                    </div>
+                    <div>
+                        <p class="secondary-text">i call it ‘computer blue’<br />graphik<br />september 2023
+                        </p>
+                    </div>
+                </div>
+            <div class="ty">
+                <h1 class="secondary-text nomargin">Danke.</h1>
+            </div>
 </body>
