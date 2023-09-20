@@ -6,12 +6,46 @@ body {
     min-height: 100%;
     color: #fff;
     margin: 0;
+    padding: 0;
     font-family: Graphik, Arial, sans-serif;
     line-height: 20px;
     color: #fff;
     background-color: #5c83d2;
     font-size: 15px;
     letter-spacing: -0.02rem;
+}
+
+
+table {
+    width: 100%;
+}
+
+tr.spacer {
+    height: 32px;
+}
+
+
+td:first-child {
+    width: 1%;
+    white-space: nowrap;
+}
+
+td:last-child {
+    text-align: right;
+    width: 1%;
+    white-space: nowrap;
+}
+
+td:nth-child(3) {
+    text-align: center;
+    width: 1%;
+    white-space: nowrap;
+    opacity: 0.5;
+}
+
+td.underline {
+    border-bottom: 2px dotted white;
+    opacity: 0.5;
 }
 
 .container {
@@ -33,7 +67,9 @@ body {
 
 
 a {
-    text-decoration: underline;
+    color: white;
+    text-decoration: none;
+
 }
 
 
@@ -59,7 +95,7 @@ p, ul {
     width: 600px;
     grid-row-gap: 64px;
     flex-direction: column;
-    margin-top: 8%;
+    margin-top: 12%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -114,9 +150,16 @@ h1 {
     margin: 0;
 }
 
+header {
+    padding-top: 4%;
+    padding-left: 8%;
+    position: fixed;
+    margin-top: -12%;
+    width: 100%;
+}
+
 .navbar {
-    grid-column-gap: 60px;
-    grid-row-gap: 60px;
+    grid-row-gap: 80px;
     flex-direction: column;
     flex: 0 auto;
     margin-left: 8%;
