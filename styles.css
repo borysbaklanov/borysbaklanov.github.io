@@ -92,7 +92,6 @@ br {
     grid-row-gap: 60px;
     flex-direction: column;
     flex: 0 auto;
-    margin-top: 8%;
     margin-left: 8%;
     display: flex;
     position: fixed;
