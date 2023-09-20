@@ -101,6 +101,7 @@ br {
 .links {
     flex-direction: column;
     flex: 0 auto;
+    grid-row-gap: 24px;
     display: flex;
 }
 
