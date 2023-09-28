@@ -2,6 +2,7 @@ html {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,10 +13,14 @@ body {
     line-height: 20px;
     color: #fff;
     background-color: #5c83d2;
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: -0.02rem;
 }
 
+::selection {
+  color: black;
+  background: #F7D881;
+}
 
 table {
     width: 100%;
@@ -41,12 +46,11 @@ td:nth-child(3) {
     text-align: center;
     width: 1%;
     white-space: nowrap;
-    opacity: 0.5;
+    color: #ADC1E9;
 }
 
 td.underline {
-    border-bottom: 2px dotted white;
-    opacity: 0.5;
+    border-bottom: 2px dotted #ADC1E9;;
 }
 
 .container {
@@ -89,11 +93,16 @@ p {
 }
 
 .secondary-text {
-    opacity: 0.5;
+    color: #ADC1E9;
 }
 
 .indent {
     margin-right: 24px;
+}
+
+.underline {
+    text-decoration: underline dotted;
+    color:white;
 }
 
 .content {
@@ -142,14 +151,14 @@ h1 {
 .footer-content {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: flex-end;
     justify-content: space-between;
     width: 100%;
     align-self: flex-end;
 }
 
-.ty {
-    align-self: flex-end;
+#ty {
+    align-self: last baseline;
 }
 
 .nomargin {
@@ -194,6 +203,7 @@ img {
     flex-direction: column;
     align-items: flex-end;
     gap: 4px;
+    text-align: right;
 }
 
 .hcaption-left {
@@ -202,6 +212,7 @@ img {
     align-items: flex-start;
     align-items: last baseline;
     gap: 8px;
+    text-align: right;
 }
 
 .hcaption-right {
@@ -218,10 +229,17 @@ img {
 
 .left-align {
     align-self: flex-start;
+    justify-content: flex-start;
 }
 
 .right-align {
+    justify-content: flex-end;
     align-self: flex-end;
+}
+
+.center-align {
+    justify-content: center;
+    align-self: center;
 }
 
 #miro {
