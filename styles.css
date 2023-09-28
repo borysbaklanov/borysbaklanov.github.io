@@ -1,12 +1,13 @@
 html {
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     min-height: 100%;
     color: #fff;
-    margin: 0;
-    padding: 0;
+
     font-family: Graphik, Arial, sans-serif;
     line-height: 20px;
     color: #fff;
@@ -55,7 +56,6 @@ td.underline {
 
 .vflex {
     flex-direction: column;
-    align-items: flex-start;
     display: flex;
 }
 
@@ -79,8 +79,13 @@ li {
 
 
 
-p, ul {
+ul {
     margin: 0;
+}
+
+p {
+    margin: 0px;
+    margin-bottom: 8px;
 }
 
 .secondary-text {
@@ -110,6 +115,7 @@ h1 {
     line-height: 33px;
     letter-spacing: -0.05rem;
 }
+
 
 .list {
     padding-bottom: 0;
@@ -149,6 +155,97 @@ h1 {
 .nomargin {
     margin: 0;
 }
+
+.end-element {
+    margin-bottom: 80px;
+}
+
+.first-element {
+    margin-top: -40px;
+}
+
+.film-photo {
+    border: 12px solid white;
+    display: inline-block;
+}
+
+.image-border {
+    border: 12px solid white;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    display: block;
+}
+
+.vcaption-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.vcaption-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.hcaption-left {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: last baseline;
+    gap: 8px;
+}
+
+.hcaption-right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-items: last baseline;
+    gap: 8px;
+}
+
+.top-align {
+    align-items: flex-start;
+}
+
+.left-align {
+    align-self: flex-start;
+}
+
+.right-align {
+    align-self: flex-end;
+}
+
+#miro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+#folders {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.onethird {
+    width: 296px;
+}
+
+.twothirds {
+    width: 448px;
+}
+
 
 header {
     padding-top: 4%;
