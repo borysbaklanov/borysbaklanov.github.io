@@ -6,11 +6,9 @@ html {
 }
 
 body {
-    min-height: 100%;
     color: #fff;
     font-family: Graphik, sans-serif;
     line-height: 1.33;
-    color: #fff;
     background-color: #5c83d2;
     font-size: 16px;
     letter-spacing: -0.02rem;
@@ -27,8 +25,12 @@ body {
 
 #logo {
     display: inline-block;
+    position: fixed;
     transition: 0.3s;
     margin-left: 24px;
+    padding-top: 4%;
+    padding-left: 8%;
+    margin-top: -12%;
 }
 
 
@@ -272,28 +274,13 @@ img {
     width: 448px;
 }
 
-
-#logo {
-    padding-top: 4%;
-    padding-left: 8%;
-    position: fixed;
-    margin-top: -12%;
-
-}
-
 .navbar {
-    grid-row-gap: 80px;
+    grid-row-gap: 24px;
     flex-direction: column;
     flex: 0 auto;
     margin-left: 8%;
     display: flex;
     position: fixed;
-}
-
-.links {
-    flex-direction: column;
-    grid-row-gap: 24px;
-    display: flex;
 }
 
 .nav-link {
@@ -302,12 +289,6 @@ img {
     margin-left: 24px;
 }
 
-.nav-link-selected {
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-    margin: 0;
-}
 
 
 .selected {
@@ -316,6 +297,10 @@ img {
     grid-row-gap: 8px;
     grid-column-gap: 8px;
     align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0;
 }
 
 .svg-container {
@@ -369,34 +354,32 @@ body {
     padding: 0 16px 0;
 }
 
-
-
 header {
-    margin: 0;
-    padding-top: 32px;
-    padding-bottom: 16px;
-    background-color: #5c83d2;
+    position: fixed;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    position: fixed;
+    justify-content: space-between;
+    padding: 16px 16px;
+    right: 0;
+    left: 0;
+    background-color: #5c83d2;
 
 }
 
 .navbar {
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-
-.links {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    align-self: flex-end;
-    }
+    margin: 0;
+    position: relative;
+}
+
+#logo {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
 
 .nav-link {
     margin: 0;
@@ -406,17 +389,13 @@ header {
     display: none;
 }
 
-#logo {
-    margin: 0;
-    padding: 0;
-}
-
 .svg-container {
     display: none;
 }
 
 .content {
     width: auto;
+    padding-top: 30%;
 }
 
 .list {
