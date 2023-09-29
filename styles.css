@@ -133,7 +133,6 @@ p {
 }
 
 h1 {
-    color: #fff;
     overflow-wrap: normal;
     margin-top: 0;
     font-size: 25px;
@@ -359,6 +358,7 @@ html {
 body {
     margin: 0;
     padding: 0 16px 0;
+    font-size: 18px;
 }
 
 header {
