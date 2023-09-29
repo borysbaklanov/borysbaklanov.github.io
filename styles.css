@@ -8,10 +8,11 @@ html {
 body {
     color: #fff;
     font-family: Graphik, sans-serif;
-    line-height: 1.25;
+    line-height: 1.33;
     background-color: #5c83d2;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
+    letter-spacing: -0.02rem;
     padding: 0;
 }
 
@@ -135,10 +136,9 @@ h1 {
     color: #fff;
     overflow-wrap: normal;
     margin-top: 0;
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 400;
-    line-height: 1.25;
-    letter-spacing: -0.02rem;
+    letter-spacing: -0.03rem;
 }
 
 
