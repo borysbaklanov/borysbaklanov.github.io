@@ -12,6 +12,8 @@ body {
     background-color: #5c83d2;
     font-size: 16px;
     letter-spacing: -0.02rem;
+    margin: 0;
+    padding: 0;
 }
 
 ::selection {
@@ -19,11 +21,16 @@ body {
   background: #F7D881;
 }
 
+#logo {
+    pointer-events: none;
+    cursor: text;
+}
+
 .cursor-neresize {
     cursor: ne-resize;
 }
 
-#logo {
+.logo-container {
     display: inline-block;
     position: fixed;
     transition: 0.3s;
@@ -171,8 +178,9 @@ h1 {
     align-self: last baseline;
 }
 
-.nomargin {
-    margin: 0;
+.nobotmargin {
+    margin-bottom: 0;
+
 }
 
 .end-element {
@@ -296,7 +304,7 @@ img {
     flex-direction: row;
     grid-row-gap: 8px;
     grid-column-gap: 8px;
-    align-items: center;
+    align-items: flex-start;
     color: white;
     text-decoration: none;
     font-weight: 700;
@@ -374,11 +382,17 @@ header {
     position: relative;
 }
 
-#logo {
+.logo-container {
     margin: 0;
     padding: 0;
     position: relative;
+    pointer-events: auto;
 }
+
+#logo {
+    pointer-events: auto;
+}
+
 
 
 .nav-link {
@@ -395,7 +409,8 @@ header {
 
 .content {
     width: auto;
-    padding-top: 30%;
+    padding-top: 40%;
+    margin: 0;
 }
 
 .list {
