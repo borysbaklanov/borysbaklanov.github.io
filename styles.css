@@ -296,7 +296,9 @@ img {
     margin-left: 24px;
 }
 
-
+.video-mobile {
+    width: 50%;
+}
 
 .selected {
     display: flex;
@@ -478,6 +480,10 @@ a {
 
 .svg-container {
     display: none;
+}
+
+.video-mobile {
+    width: 100%;
 }
 
 }
