@@ -411,10 +411,6 @@ a {
     font-weight: 700;
 }
 
-.svg-container {
-    display: none;
-}
-
 .content {
     width: auto;
     padding-top: 40%;
@@ -475,10 +471,11 @@ a {
     -webkit-text-decoration: dotted;
     color:white;
 }
+
+#ampelmann-svg {
+    display: none;
 }
 
-  #ampelmann-svg {
-    display: none;
-  }
+
 
 }
