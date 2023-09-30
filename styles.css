@@ -330,7 +330,7 @@ img {
   }
 }
 
-.ampelmann {
+#ampelmann {
     grid-column-gap: 40px;
     align-items: center;
     flex-direction: row;
@@ -341,7 +341,7 @@ img {
     flex-shrink: 1;
 }
 
-.flex-item:last-child {
+#ampelmann-svg {
     flex-shrink: 0;
     width: 85px;
 }
@@ -392,7 +392,11 @@ header {
     pointer-events: auto;
 }
 
+a {
+    color: white;
+    text-decoration: none;
 
+}
 
 .nav-link {
     margin: 0;
@@ -400,6 +404,10 @@ header {
 
 #home {
     display: none;
+}
+
+.mobile-selected {
+    font-weight: 700;
 }
 
 .svg-container {
@@ -456,5 +464,13 @@ header {
 .mobile-reverse {
     flex-direction: column-reverse;
 }
+
+.indent {
+    margin-right: 16px;
+}
+
+  #ampelmann-svg {
+    display: none;
+  }
 
 }
