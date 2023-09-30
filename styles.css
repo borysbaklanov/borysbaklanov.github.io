@@ -476,6 +476,8 @@ a {
     display: none;
 }
 
-
+.svg-container {
+    display: none;
+}
 
 }
