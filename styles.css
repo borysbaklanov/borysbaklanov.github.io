@@ -120,6 +120,7 @@ p {
 .underline {
     text-decoration: underline dotted;
     color:white;
+    -webkit-text-decoration: dotted;
 }
 
 .content {
@@ -471,6 +472,7 @@ a {
 
 .underline {
     text-decoration: underline dotted;
+    -webkit-text-decoration: dotted;
     color:white;
 }
 }
