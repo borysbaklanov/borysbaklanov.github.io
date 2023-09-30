@@ -469,6 +469,12 @@ a {
     margin-right: 16px;
 }
 
+.underline {
+    text-decoration: underline dotted;
+    color:white;
+}
+}
+
   #ampelmann-svg {
     display: none;
   }
