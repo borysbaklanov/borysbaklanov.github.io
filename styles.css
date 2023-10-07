@@ -36,37 +36,64 @@ body {
     margin-top: -12%;
 }
 
+/* Positions section start*/
 
-table {
+.row {
+    display: flex;
     width: 100%;
+    margin-bottom: 32px;
 }
 
-tr.spacer {
-    height: 32px;
+.row:last-child {
+    margin-bottom: 0;
 }
 
-
-td:first-child {
-    width: 1%;
-    white-space: nowrap;
+.title {
+    flex-basis: 50%;
+    display: flex;
 }
 
-td:last-child {
-    text-align: right;
-    width: 1%;
-    white-space: nowrap;
+.title-content {
+    margin-right: 4px;
 }
 
-td:nth-child(3) {
-    text-align: center;
-    width: 1%;
-    white-space: nowrap;
+.place {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.place-content {
+    margin-left: 4px;
+}
+
+.at {
     color: #ADC1E9;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
-td.underline {
-    border-bottom: 2px dotted #ADC1E9;;
+.start::before {
+    content: "";
+    flex: 1;
+    background-image: radial-gradient(circle, #ADC1E9 1px, transparent 1px, transparent 2px);
+    background-position: bottom;
+    background-size: 6px 2px;
+    background-repeat: space no-repeat;
+    transform: translateY(-4px);
 }
+
+.end::after {
+    content: "";
+    flex: 1;
+    background-image: radial-gradient(circle, #ADC1E9 1px, transparent 1px, transparent 2px);
+    background-position: bottom;
+    background-size: 6px 2px;
+    background-repeat: space no-repeat;
+    transform: translateY(-4px);
+}
+
+/* Positions section end */
 
 .container {
     margin-left: auto;
@@ -105,18 +132,19 @@ p {
     margin-bottom: 12px;
 }
 
+
+.underline {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color:white;
+}
+
 .secondary-text {
     color: #ADC1E9;
 }
 
 .indent {
     margin-right: 24px;
-}
-
-.underline {
-    text-decoration: underline dotted;
-    color:white;
-    -webkit-text-decoration: dotted;
 }
 
 .content {
@@ -464,8 +492,8 @@ a {
 }
 
 .underline {
-    text-decoration: underline dotted;
-    -webkit-text-decoration: dotted;
+    text-decoration: underline;
+    text-decoration-style: dotted;
     color:white;
 }
 
