@@ -509,4 +509,12 @@ a {
     width: 100%;
 }
 
+.title {
+    flex-basis: 45%;
+}
+
+.place {
+    flex-basis: 55%;
+}
+
 }
