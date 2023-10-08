@@ -29,7 +29,6 @@ body {
 #logo-container {
     display: inline-block;
     position: fixed;
-    transition: 0.3s;
     margin-left: 24px;
     padding-top: 4%;
     padding-left: 8%;
