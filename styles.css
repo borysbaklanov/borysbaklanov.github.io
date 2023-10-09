@@ -5,6 +5,23 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: "Graphik";
+    font-style: normal;
+    font-weight: 400;
+    src: "/fonts/Graphik-Regular"
+        ormat("woff2");
+    }
+
+@font-face {
+    font-family: "Graphik";
+    font-style: normal;
+    font-weight: 700;
+    src: "/fonts/Graphik-Bold"
+        format("woff2");
+}
+
+
 body {
     color: #fff;
     font-family: Graphik, sans-serif;
@@ -24,6 +41,10 @@ body {
 
 .cursor-neresize {
     cursor: ne-resize;
+}
+
+.cursor-notallowed {
+    cursor: not-allowed;
 }
 
 #logo-container {
@@ -65,6 +86,7 @@ body {
 
 .place-content {
     margin-left: 4px;
+    position: relative;
 }
 
 .at {
@@ -91,6 +113,23 @@ body {
     background-size: 6px 2px;
     background-repeat: space no-repeat;
     transform: translateY(-4px);
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #E6E4DF;
+    color: #454543;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 2px;
+    z-index: 1;
+    border: 0.5px solid #B4B4B4;
+    bottom: 10px;
+}
+
+.start:hover .tooltip {
+    display: block;
 }
 
 /* Positions section end */
