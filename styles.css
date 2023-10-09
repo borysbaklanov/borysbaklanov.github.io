@@ -120,14 +120,17 @@ body {
     background-color: #E6E4DF;
     color: #454543;
     font-size: 12px;
-    padding: 4px 8px;
+    padding: 2px 4px;
     border-radius: 2px;
     z-index: 1;
     border: 0.5px solid #B4B4B4;
-    bottom: 10px;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
 }
 
-.start:hover .tooltip {
+.place-content:hover .tooltip {
     display: block;
 }
 
@@ -206,7 +209,7 @@ h1 {
 
 .list {
     padding-bottom: 0;
-    padding-left: 0;
+    padding-left: 12px;
 }
 
 .divider {
