@@ -1,5 +1,5 @@
 html {
-    font-family: sans-serif;
+    font-family: Graphik, sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -24,7 +24,6 @@ html {
 
 body {
     color: #fff;
-    font-family: Graphik, sans-serif;
     line-height: 1.33;
     background-color: #5c83d2;
     font-size: 16px;
