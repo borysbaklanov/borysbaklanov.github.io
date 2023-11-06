@@ -61,6 +61,7 @@ body {
     display: flex;
     width: 100%;
     margin-bottom: 32px;
+    white-space: nowrap;
 }
 
 .row:last-child {
@@ -440,7 +441,7 @@ header {
     right: 0;
     left: 0;
     background-color: #5c83d2;
-
+    z-index: 1;
 }
 
 .navbar {
