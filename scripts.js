@@ -24,5 +24,50 @@ if (window.matchMedia('(min-width: 768px)').matches) {
     const parentElement = linkElement.parentNode;
     parentElement.replaceChild(linkText, linkElement);
 
+}
+
+
+
+function copytoClipboard() {
+  var emailElement = document.getElementById("email");
+  var emailText = emailElement.innerText;
+
+  var textarea = document.createElement("textarea");
+  textarea.value = emailText;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "absolute";
+  textarea.style.left = "-9999px";
+
+  document.body.appendChild(textarea);
+
+  textarea.select();
+  document.execCommand("copy");
+
+  document.body.removeChild(textarea);
+
+  showTooltip(emailElement);
+
+}
+
+
+function showTooltip(element) {
+  var tooltip = document.getElementById("copytooltip");
+
+  // Calculate the center position of the span element
+  var rect = element.getBoundingClientRect();
+  var centerX = rect.left + rect.width / 2 + window.pageXOffset;
+
+  // Set tooltip position
+  tooltip.style.left = centerX - tooltip.offsetWidth / 2 + "px";
+  tooltip.style.top = rect.top - 24 - tooltip.offsetHeight + window.pageYOffset + "px";
+
+  // Show the tooltip
+  tooltip.style.display = "block";
+  tooltip.style.height = 16 + "px"
+
+  // Hide the tooltip after a short delay
+  setTimeout(function() {
+    tooltip.style.display = "none";
+  }, 2000); // Adjust the delay as needed
 
 }

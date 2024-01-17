@@ -127,7 +127,6 @@ body {
     bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
-    white-space: nowrap;
 }
 
 .place-content:hover .tooltip {
@@ -178,6 +177,10 @@ p {
     text-decoration: underline;
     text-decoration-style: dotted;
     color:white;
+}
+
+#email {
+    cursor: context-menu;
 }
 
 .secondary-text {
