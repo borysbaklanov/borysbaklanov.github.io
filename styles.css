@@ -165,10 +165,12 @@ body {
     align-items: center;
     background-color: #5c83d2;
     padding: 0 8px;
+    transition: 0.2s filter;
 }
 
 .service-item:hover {
     filter: brightness(95%);
+    transition: 0.2s filter;
 }
 
 .service-item:hover .zero-opacity {
