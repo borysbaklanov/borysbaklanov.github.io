@@ -151,6 +151,30 @@ body {
     align-items: baseline;
 }
 
+.zero-opacity {
+    opacity: 0;
+    transition: 0.2s opacity;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    height: 56px;
+    align-items: center;
+    background-color: #5c83d2;
+    padding: 0 8px;
+}
+
+.service-item:hover {
+    filter: brightness(95%);
+}
+
+.service-item:hover .zero-opacity {
+    opacity: 1;
+    transition: 0.2s opacity;
+}
 
 a {
     color: white;
