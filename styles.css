@@ -168,6 +168,10 @@ body {
     transition: 0.2s filter;
 }
 
+.service-item:last-child {
+    border-bottom: none;
+}
+
 .service-item:hover {
     filter: brightness(95%);
     transition: 0.2s filter;
