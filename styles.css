@@ -160,11 +160,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 2px solid rgba(255, 255, 255, .3);
-    height: 56px;
     align-items: center;
-    background-color: #5c83d2;
     padding: 0 8px;
+    height: 56px;
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    cursor: ne-resize;
+    background-color: #5c83d2;
     transition: 0.2s filter;
 }
 
