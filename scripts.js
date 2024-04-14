@@ -71,3 +71,23 @@ function showTooltip(element) {
   }, 2000); // Adjust the delay as needed
 
 }
+
+
+  const rotatingWheel = document.getElementById('rotating-wheel');
+
+  rotatingWheel.addEventListener('mouseenter', () => {
+    rotatingWheel.classList.add('hovered');
+
+    // Get the current rotation angle
+    const style = getComputedStyle(rotatingWheel);
+    const transform = style.getPropertyValue('transform');
+    const matrix = new DOMMatrix(transform);
+    const currentRotation = matrix.rotate(0, 0).angle;
+
+    // Set the animation direction based on the current rotation angle
+    rotatingWheel.style.animationDirection = currentRotation < 0 ? 'reverse' : 'normal';
+  });
+
+  rotatingWheel.addEventListener('mouseleave', () => {
+    rotatingWheel.classList.remove('hovered');
+  });
