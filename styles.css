@@ -697,9 +697,7 @@ gap:0px}
         }
 
         .underline {
-            text-decoration: underline;
-            text-decoration-style: dotted;
-            color:var(--text-color);
+            text-decoration: none;
         }
 
         #ampelmann-svg {
