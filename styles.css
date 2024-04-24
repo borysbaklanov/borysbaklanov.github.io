@@ -614,6 +614,21 @@ gap:0px}
             text-decoration: none;
         }
 
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+
+        u + #body a {
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+
+        #MessageViewBody {
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+
         .nav-link {
             margin: 0;
         }
