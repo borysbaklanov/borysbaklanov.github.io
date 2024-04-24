@@ -477,6 +477,16 @@ gap:0px}
 
 /* FILTERS END */
 
+/* ARTICLE TECH START */
+
+.article-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
 
 .navbar {
     grid-row-gap: 24px;
@@ -574,7 +584,7 @@ gap:0px}
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding: 16px 16px;
+            padding: 24px 16px;
             right: 0;
             left: 0;
             background-color: var(--background-color);
@@ -595,11 +605,13 @@ gap:0px}
             position: relative;
         }
 
+        .wheel-container {
+            display: none;
+        }
 
         a {
             color: var(--text-color);
             text-decoration: none;
-
         }
 
         .nav-link {
