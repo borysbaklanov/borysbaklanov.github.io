@@ -11,7 +11,7 @@ window.addEventListener("load", changeText);
 
 
 if (window.matchMedia('(min-width: 768px)').matches) {
-    const textElement = document.getElementById("logo-container");
+    const textElement = document.getElementById("logo-link");
     textElement.addEventListener("mouseover", () => {
         textElement.textContent = "Борис Бакланов";
     });
@@ -19,11 +19,12 @@ if (window.matchMedia('(min-width: 768px)').matches) {
         textElement.textContent = "Borys Baklanov";
     });
 
+/*  
     const linkElement = document.getElementById("logo-link");
     const linkText = document.createTextNode(linkElement.textContent);
     const parentElement = linkElement.parentNode;
     parentElement.replaceChild(linkText, linkElement);
-
+*/
 }
 
 

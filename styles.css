@@ -41,6 +41,10 @@ body {
     padding: 0;
 }
 
+b {
+    letter-spacing: 0;
+}
+
 ::selection {
   color: black;
   background: var(--text-selection-color);
@@ -58,7 +62,7 @@ body {
 /* BASA END */
 
 #logo-container {
-    display: inline-block;
+
     position: fixed;
     margin-left: 24px;
     padding-top: 4%;
@@ -479,14 +483,36 @@ gap:0px}
 
 /* ARTICLE TECH START */
 
+.article-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.article-back-link {
+    width: fit-content;
+    transition: color 300ms;
+
+}
+
+.article-back-link:hover {
+    color: var(--text-color);
+    transition: color 300ms;
+}
+
 .article-title {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 16px;
     align-items: baseline;
     flex-wrap: wrap;
 }
 
+.article-section-break {
+    margin-top: 48px;
+}
+
+/* ARTICLE TECH ENDS */
 
 .navbar {
     grid-row-gap: 24px;
@@ -582,9 +608,10 @@ gap:0px}
         header {
             position: fixed;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 24px 16px;
+            flex-direction: column;
+            gap: 8px;
+            flex-wrap: wrap;
+            padding: 16px 16px;
             right: 0;
             left: 0;
             background-color: var(--background-color);
