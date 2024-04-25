@@ -609,7 +609,7 @@ gap:0px}
             position: fixed;
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 12px;
             flex-wrap: wrap;
             padding: 16px 16px;
             right: 0;
