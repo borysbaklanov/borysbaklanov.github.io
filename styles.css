@@ -368,6 +368,14 @@ img {
     text-align: right;
 }
 
+.vcaption-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+}
+
 .hcaption-left {
     display: flex;
     flex-direction: row;
