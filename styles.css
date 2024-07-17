@@ -475,7 +475,8 @@ img {
 .filter-controls {
     display: flex;
     flex-direction: row;
-gap:0px}
+    gap:0px
+}
 
 
 .filter-photo {
@@ -758,7 +759,9 @@ gap:0px}
         .place {
             flex-basis: 55%;
         }
-
+        .filter-controls {
+            margin-bottom: 16px;
+        }
 }
 
 /* MOBILKA END */
