@@ -168,6 +168,8 @@ b {
     align-items: baseline;
 }
 
+
+
 .zero-opacity {
     opacity: 0;
     transition: 0.2s opacity;
@@ -256,7 +258,7 @@ p {
 .content {
     display: flex;
     flex-direction: column;
-    grid-row-gap: 64px;
+    grid-row-gap: 120px;
 }
 
 .display-none {
@@ -412,12 +414,19 @@ img {
     align-self: center;
 }
 
-#miro {
+.case {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 24px;
+    gap: 48px;
 }
+
+.concepts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 
 #folders {
     display: flex;
@@ -489,6 +498,43 @@ img {
 }
 
 /* FILTERS END */
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.product-item-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-item-title * {
+    margin-bottom: 0px;
+}
+
+.product-item-links {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.product-item-links * {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: var(--text-color);
+}
+
+.product-item-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 
 /* ARTICLE TECH START */
 
@@ -759,8 +805,16 @@ img {
         .place {
             flex-basis: 55%;
         }
+
         .filter-controls {
             margin-bottom: 16px;
+        }
+        .product-item-title {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: space-between;
+            width: 100%;
         }
 }
 
