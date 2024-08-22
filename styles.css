@@ -384,7 +384,7 @@ img {
     align-items: flex-start;
     align-items: last baseline;
     gap: 8px;
-    text-align: right;
+    text-align: left;
 }
 
 .hcaption-right {
@@ -393,6 +393,8 @@ img {
     align-items: flex-end;
     align-items: last baseline;
     gap: 8px;
+    text-align: right;
+
 }
 
 .top-align {
@@ -747,7 +749,7 @@ img {
         .hcaption-left {
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
+            align-items: flex-start;
         }
 
         .hcaption-right {
