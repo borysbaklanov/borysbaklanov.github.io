@@ -30,8 +30,7 @@ if (window.matchMedia('(min-width: 768px)').matches) {
 
 
 function copytoClipboard() {
-  var emailElement = document.getElementById("email");
-  var emailText = emailElement.innerText;
+  var emailText = "borys.baklanov@gmail.com";
 
   var textarea = document.createElement("textarea");
   textarea.value = emailText;
@@ -46,7 +45,7 @@ function copytoClipboard() {
 
   document.body.removeChild(textarea);
 
-  showTooltip(emailElement);
+  showTooltip(document.getElementById("email"));
 
 }
 
