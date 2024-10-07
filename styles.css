@@ -55,6 +55,10 @@ b {
     cursor: ne-resize;
 }
 
+.external-link {
+    cursor: ne-resize;
+}
+
 .cursor-notallowed {
     cursor: not-allowed;
 }
@@ -571,6 +575,14 @@ img {
 
 .article-asset-margin {
     margin: 32px 0px;
+}
+
+.additional-reading-item {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+
 }
 
 /* ARTICLE TECH ENDS */
