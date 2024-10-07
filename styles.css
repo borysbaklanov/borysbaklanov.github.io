@@ -172,7 +172,9 @@ b {
     align-items: baseline;
 }
 
-
+.bot16 {
+    margin-bottom: 16px;
+}
 
 .zero-opacity {
     opacity: 0;
@@ -584,6 +586,7 @@ img {
     width: 100%;
 
 }
+
 
 /* ARTICLE TECH ENDS */
 
