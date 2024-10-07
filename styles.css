@@ -172,8 +172,10 @@ b {
     align-items: baseline;
 }
 
-.bot16 {
-    margin-bottom: 16px;
+.articles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .zero-opacity {
