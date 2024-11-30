@@ -299,6 +299,12 @@ h1 {
 
 /* FOOTER START */
 
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
 .divider {
     width: 100%;
     height: 2px;
